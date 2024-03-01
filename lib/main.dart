@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:wakelock/wakelock.dart';
+import 'package:product_catalog/home_page.dart';
+
 
 void main() {
+
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+
   const MyApp({super.key});
 
   @override
+
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text('30 days of flutter'),
-          ),
-        ),
-      ),
+    return const MaterialApp(
+      home: HomePage()
     );
   }
 }
