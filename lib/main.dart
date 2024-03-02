@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:product_catalog/pages/home_page.dart';
 import 'package:product_catalog/pages/login_page.dart';
 
@@ -19,6 +20,9 @@ class MyApp extends StatelessWidget {
         "/home": (context) => HomePage(),
         "/login": (context) => LoginPage()
       },
+      theme: ThemeData(
+        fontFamily: GoogleFonts.lato().fontFamily,
+      ),
     );
   }
 }
